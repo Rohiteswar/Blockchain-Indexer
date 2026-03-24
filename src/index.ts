@@ -9,7 +9,7 @@ async function main() {
 
   try {
     await sendSubscribeRequest(stream, request);
-    console.log("✅ Subscribed to PayPal USD accounts, slots, and transactions.");
+    console.log("✅ Subscribed to USD accounts, slots, and transactions.");
     await handleStreamEvents(stream);
   } catch (error) {
     console.error("Subscription error:", error);
